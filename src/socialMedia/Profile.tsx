@@ -19,10 +19,13 @@ function Profile({ userId }: profileProps) {
   useEffect(() => {
     if (!userId || userId === -1) {
       setProfile({
-        name: 'Monkey D. Luffy',
+        name: 'Jessica',
         isOnline: true,
-        about: 'I am gonna be king of pirates!',
-        picture: '/assets/default_profile.png'
+        about:
+          'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua',
+
+        picture:
+          'https://i.pinimg.com/550x/38/09/c3/3809c319d6b40a4efda99bf5500fe6ef.jpg'
       })
     }
   }, [])
@@ -58,7 +61,7 @@ function Profile({ userId }: profileProps) {
       >
         {profile.isOnline ? 'Go Offline' : 'Go Online'}
       </Button>
-      <h1 className="text-xl font-bold text-slate-600">{profile.name}</h1>
+      <h1 className="text-2xl font-bold text-slate-600">{profile.name}</h1>
       <p className="text-sm font-light text-slate-600">{profile.about}</p>
     </div>
   )
