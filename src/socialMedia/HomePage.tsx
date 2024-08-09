@@ -6,7 +6,7 @@ type Props = {}
 
 const HomePage = (props: Props) => {
   return (
-    <div className="h-full w-full font-sans px-8">
+    <div className="h-full w-full font-sans px-8 lg:px-64">
       <Profile />
       <Posts />
     </div>

@@ -36,7 +36,7 @@ function Profile({ userId }: profileProps) {
     setProfile(_profile)
   }
   return (
-    <div className="flex flex-col w-100 h-96 items-center pt-12 gap-y-3">
+    <div className="flex flex-col w-100 items-center pt-12 gap-y-3 px-2 lg:px-16">
       <img
         src={profile.picture}
         alt={''}
@@ -62,7 +62,7 @@ function Profile({ userId }: profileProps) {
         {profile.isOnline ? 'Go Offline' : 'Go Online'}
       </Button>
       <h1 className="text-2xl font-bold text-slate-600">{profile.name}</h1>
-      <p className="text-sm font-light text-slate-600">{profile.about}</p>
+      <p className="text-sm  text-slate-600 text-center">{profile.about}</p>
     </div>
   )
 }
